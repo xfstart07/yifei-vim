@@ -8,7 +8,7 @@ git submodule add git://github.com/msanders/snipmate.vim.git bundle/snipmate
 git submodule add git://github.com/ervandew/supertab.git bundle/supertab
 git submodule add git://github.com/vim-scripts/taglist.vim.git bundle/taglist.vim
 git submodule add git://github.com/ap/vim-css-color.git bundle/vim-css-color
-git submodule add git://github.com/tpope/vim-pathogen.git bundle/vim-pathogen
+#git submodule add git://github.com/tpope/vim-pathogen.git bundle/vim-pathogen
 git submodule add git://github.com/tpope/vim-rails.git bundle/vim-rails
 git submodule add git://github.com/tpope/vim-repeat.git bundle/vim-repeat
 git submodule add git://github.com/vim-ruby/vim-ruby.git bundle/vim-ruby
