@@ -1,9 +1,9 @@
 " Pro version Vimrc
 " I kept all other settings in plugins/settings directory
 "
-" Eddie Kao
-" http://blog.eddie.com.tw
-" eddie@digik.com.tw
+" Xu Fei
+" http://xfstart07.github.com
+" xfstart07@gmail.com
 
 runtime bundle/vim-pathogen/autoload/pathogen.vim
 filetype off
