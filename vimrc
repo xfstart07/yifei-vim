@@ -1,7 +1,7 @@
 " My currently working version Vimrc
 " I kept all other settings in plugins/settings directory
 "
-" Yifei Xu
+" Xu Fei
 " http://xfstart07.github.com
 " xfstart07@gmail.com
 
