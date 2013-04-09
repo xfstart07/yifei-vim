@@ -4,11 +4,11 @@ colorscheme molokai
 set linespace=2
 
 if has("gui_macvim")
-  set guifont=Monaco:h17
+  set guifont=Monaco:h14
 elseif has("gui_gtk")
   set guifont=Monospace\ 12
 else
-  set guifont=Monaco:h17
+  set guifont=Monaco:h14
 end
 
 if has("gui_macvim")
