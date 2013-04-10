@@ -21,7 +21,7 @@
 	url = git://github.com/ervandew/supertab.git
 [submodule "bundle/taglist.vim"]
 	path = bundle/taglist.vim
-	url = git://github.com/vim-scripts/taglist.vim.git
+	url = git@github.com:vim-scripts/taglist.vim.git
 [submodule "bundle/vim-css-color"]
 	path = bundle/vim-css-color
 	url = git://github.com/ap/vim-css-color.git
