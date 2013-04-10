@@ -63,7 +63,7 @@
 	url = git://github.com/digitaltoad/vim-jade.git
 [submodule "bundle/vimwiki"]
 	path = bundle/vimwiki
-	url = git://github.com/vim-scripts/vimwiki.git
+	url = git@github.com:vim-scripts/vimwiki.git
 [submodule "bundle/vim-markdown"]
 	path = bundle/vim-markdown
 	url = git://github.com/plasticboy/vim-markdown.git
