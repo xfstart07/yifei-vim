@@ -54,7 +54,7 @@
 	url = git://github.com/pangloss/vim-javascript.git
 [submodule "bundle/vim-octopress"]
 	path = bundle/vim-octopress
-	url = git://github.com/tangledhelix/vim-octopress.git
+	url = git@github.com:tangledhelix/vim-octopress.git
 [submodule "bundle/vim-indent-object"]
 	path = bundle/vim-indent-object
 	url = git://github.com/michaeljsmith/vim-indent-object.git
