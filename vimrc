@@ -96,6 +96,19 @@ map <leader>to :tabonly<cr>
 map <leader>tc :tabclose<cr>
 map <leader>tm :tabmove
 
+" select ALL
+map <C-A> ggVG
+
+" identation
+nmap <TAB> v>
+nmap <S-TAB> v<
+vmap <TAB> >gv
+vmap <S-TAB> <gv
+
+" next and prev tab
+noremap <F7> gT
+noremap <F8> gt
+
 " Powerline
 set laststatus=2
 set t_Co=256
