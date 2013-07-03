@@ -11,14 +11,15 @@ Bundle 'gmarik/vundle'
 " My Bundles here:
 "
 " original repos on github
+Bundle 'Align'
 Bundle 'lokaltog/vim-powerline'
 Bundle 'kien/ctrlp.vim'
 Bundle 'scrooloose/nerdtree'
 Bundle 'mrtazz/molokai.vim'
-Bundle 'msanders/snipmate.vim'
 Bundle 'mileszs/ack.vim'
 Bundle 'tpope/vim-rails'
 Bundle 'hallison/vim-markdown'
+Bundle 'xfstart07/snipmate.vim'
 
 " My Setting
 
@@ -83,9 +84,6 @@ let g:mapleader = ","
 " Fast saving
 nmap <leader>w :w!<cr>
 
-" quit
-nmap <leader>q :q<cr>
-
 " Smart way to move between windows
 map <C-j> <C-W>j
 map <C-k> <C-W>k
@@ -103,3 +101,18 @@ set laststatus=2
 set t_Co=256
 set encoding=utf-8
 let g:Powerline_symbols = 'fancy'
+
+" NERDTree
+nnoremap <silent> <F2> :NERDTreeToggle<CR>
+let NERDTreeShowBookmarks=0
+let NERDTreeChDirMode=2
+let NERDTreeMouseMode=2
+let g:nerdtree_tabs_focus_on_files=1
+let g:nerdtree_tabs_open_on_gui_startup=0
+" open directory of current opened file
+map <leader>r :NERDTreeFind<cr>
+
+" make nerdtree look nice
+let NERDTreeMinimalUI=1
+let NERDTreeDirArrows=1
+let g:NERDTreeWinSize=30
