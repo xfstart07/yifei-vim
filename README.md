@@ -1,14 +1,10 @@
-个人vim工具管理develop
+个人vim工具管理develop版
 
 ## 插件列表
 
 * [ack.vim](https://github.com/mileszs/ack.vim)
 
 快速查找文件的插件。
-
-* autoclose
-
-自动匹配插件。
 
 * [ctrip.vim](https://github.com/kien/ctrlp.vim)
 
@@ -26,5 +22,6 @@ Rails的vim插件。
 
 Ruby的vim插件。
 
-* vimwiki
-vim下识别wiki格式插件。
+* snipmate.vim
+
+代码片段
