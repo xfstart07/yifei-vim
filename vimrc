@@ -20,6 +20,8 @@ Bundle 'mileszs/ack.vim'
 Bundle 'tpope/vim-rails'
 Bundle 'hallison/vim-markdown'
 Bundle 'xfstart07/snipmate.vim'
+Bundle 'mattn/zencoding-vim'
+Bundle 'motemen/git-vim'
 
 " My Setting
 
@@ -129,3 +131,8 @@ map <leader>r :NERDTreeFind<cr>
 let NERDTreeMinimalUI=1
 let NERDTreeDirArrows=1
 let g:NERDTreeWinSize=30
+
+" ZenCoding
+let g:user_zen_expandabbr_key = '<c-y>'
+let g:use_zen_complete_tag = 1
+
