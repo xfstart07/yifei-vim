@@ -143,7 +143,7 @@ let g:use_zen_complete_tag = 1
 map <leader>ga :GitAdd<cr>
 map <Leader>gb :GitBlame<cr>
 map <Leader>gc :GitCommit<cr>
-map <Leader>gd :GitDiff<cr>
+map <Leader>gdf :GitDiff<cr>
 map <Leader>gl :GitLog<cr>
 map <Leader>gs :GitStatus<cr>
 
