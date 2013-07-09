@@ -51,7 +51,10 @@ set noswapfile
 set nowritebackup
 set ignorecase
 set copyindent
-set autoindent
+
+set ai " Auto indent
+set si " Smart indent
+set wrap " Wrap lines
 
 " 行号
 set number
