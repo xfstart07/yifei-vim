@@ -1,4 +1,4 @@
-set nocompatible
+ret nocompatible
 filetype off
 
 set rtp+=~/.vim/bundle/vundle/
@@ -35,7 +35,7 @@ syntax enable
 
 " color theme
 try
-	colorscheme molokai
+  colorscheme molokai
 catch
 endtry
 
@@ -88,6 +88,12 @@ let g:mapleader = ","
 
 " Fast saving
 nmap <leader>w :w!<cr>
+
+" Cut and Copy and Stick
+map <C-x> dd
+map <C-c> y
+map <C-v> p
+
 
 " Smart way to move between windows
 map <C-j> <C-W>j
