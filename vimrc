@@ -12,7 +12,6 @@ Bundle 'gmarik/vundle'
 "
 " original repos on github
 Bundle 'Align'
-Bundle 'lokaltog/vim-powerline'
 Bundle 'kien/ctrlp.vim'
 Bundle 'scrooloose/nerdtree'
 Bundle 'mrtazz/molokai.vim'
@@ -22,6 +21,7 @@ Bundle 'hallison/vim-markdown'
 Bundle 'xfstart07/snipmate.vim'
 Bundle 'mattn/zencoding-vim'
 Bundle 'motemen/git-vim'
+Bundle 'Lokaltog/vim-powerline'
 
 " My Setting
 
