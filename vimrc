@@ -5,7 +5,7 @@ set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
 
 " let Vundle manage Vundle
-" required! 
+" required!
 Bundle 'gmarik/vundle'
 
 " My Bundles here:
@@ -83,6 +83,7 @@ filetype plugin indent on
 
 " With a map leader it's possible to do extra key combinations
 " like <leader>w saves the current file
+
 let mapleader = ","
 let g:mapleader = ","
 
@@ -152,8 +153,4 @@ map <Leader>gc :GitCommit<cr>
 map <Leader>gv :GitDiff<cr>
 map <Leader>gl :GitLog<cr>
 map <Leader>gs :GitStatus<cr>
-
-
-
-
 
