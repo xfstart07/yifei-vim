@@ -1,6 +1,10 @@
-个人vim工具管理develop版
+个人vim工具管理
 
 ## 插件列表
+
+* [vundle](https://github.com/gmarik/vundle)
+
+vim的Bundel管理
 
 * [ack.vim](https://github.com/mileszs/ack.vim)
 
