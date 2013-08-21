@@ -22,6 +22,9 @@ Bundle 'xfstart07/snipmate.vim'
 Bundle 'mattn/zencoding-vim'
 Bundle 'motemen/git-vim'
 Bundle 'Lokaltog/vim-powerline'
+Bundle 'kchmck/vim-coffee-script'
+Bundle 'The-NERD-Commenter'
+Bundle 'majutsushi/tagbar'
 
 " My Setting
 
@@ -90,11 +93,15 @@ let g:mapleader = ","
 " Fast saving
 nmap <leader>w :w!<cr>
 
-" Cut and Copy and Stick
-map <C-x> dd
-map <C-c> y
-map <C-v> p
+" set clipboard=unnamed
+if $TMUX == ''
+  set clipboard+=unnamed
+endif
 
+" set paste
+nnoremap <F4>set invpaste paste?<CR>
+imap <F4> <C-O>:set invpaste paste?<CR>
+set pastetoggle=<F4>
 
 " Smart way to move between windows
 map <C-j> <C-W>j
@@ -126,6 +133,9 @@ set laststatus=2
 set t_Co=256
 set encoding=utf-8
 let g:Powerline_symbols = 'fancy'
+
+" Tagbar
+nnoremap <silent> <F3> :TagbarToggle<CR>
 
 " NERDTree
 nnoremap <silent> <F2> :NERDTreeToggle<CR>
