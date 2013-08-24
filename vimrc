@@ -11,7 +11,6 @@ Bundle 'gmarik/vundle'
 " My Bundles here:
 "
 " original repos on github
-Bundle 'Align'
 Bundle 'kien/ctrlp.vim'
 Bundle 'scrooloose/nerdtree'
 Bundle 'mrtazz/molokai.vim'
@@ -21,10 +20,11 @@ Bundle 'hallison/vim-markdown'
 Bundle 'xfstart07/snipmate.vim'
 Bundle 'mattn/zencoding-vim'
 Bundle 'motemen/git-vim'
-Bundle 'Lokaltog/vim-powerline'
 Bundle 'kchmck/vim-coffee-script'
 Bundle 'The-NERD-Commenter'
 Bundle 'majutsushi/tagbar'
+Bundle "bling/vim-airline"
+Bundle 'tpope/vim-fugitive'
 
 " My Setting
 
@@ -128,11 +128,19 @@ vmap <S-TAB> <gv
 noremap <F7> gT
 noremap <F8> gt
 
-" Powerline
+" line color
 set laststatus=2
 set t_Co=256
 set encoding=utf-8
-let g:Powerline_symbols = 'fancy'
+
+" airline
+let g:airline_theme = 'dark'
+let g:airline_enable_branch=1
+let g:airline_detect_paste=1
+let g:airline_enable_syntastic=1
+
+set ttimeoutlen=50
+
 
 " Tagbar
 nnoremap <silent> <F3> :TagbarToggle<CR>
