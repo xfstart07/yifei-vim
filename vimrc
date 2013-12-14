@@ -28,6 +28,8 @@ Bundle 'tpope/vim-fugitive'
 
 " My Setting
 
+set helplang=cn
+
 " 高亮
 syntax on
 " 搜索高亮
@@ -171,4 +173,11 @@ map <Leader>gc :GitCommit<cr>
 map <Leader>gv :GitDiff<cr>
 map <Leader>gl :GitLog<cr>
 map <Leader>gs :GitStatus<cr>
+
+let Tlist_Ctags_Cmd='/usr/local/Cellar/ctags/5.8/bin/ctags'
+let Tlist_WinWidth=40
+let Tlist_GainFocus_On_ToggleOpen=1
+map <F5> :TlistToggle<cr>
+set tags+=./tags;/
+set tags+=gems.tags
 
