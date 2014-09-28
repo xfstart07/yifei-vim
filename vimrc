@@ -1,23 +1,30 @@
-ret nocompatible
+set nocompatible
 filetype off
 
 set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
 
-" let Vundle manage Vundle
+" Vundle manage bundle
 " required!
 Bundle 'gmarik/vundle'
 
-" My Bundles here:
+" install: BundleInstall 
 "
 " original repos on github
+
+Bundle 'Align'
+
+" ctrl + p
 Bundle 'kien/ctrlp.vim'
+
 Bundle 'scrooloose/nerdtree'
+
+" color molokai
 Bundle 'mrtazz/molokai.vim'
+
 Bundle 'mileszs/ack.vim'
 Bundle 'tpope/vim-rails'
 Bundle 'hallison/vim-markdown'
-Bundle 'xfstart07/snipmate.vim'
 Bundle 'mattn/zencoding-vim'
 Bundle 'motemen/git-vim'
 Bundle 'kchmck/vim-coffee-script'
@@ -25,6 +32,17 @@ Bundle 'The-NERD-Commenter'
 Bundle 'majutsushi/tagbar'
 Bundle "bling/vim-airline"
 Bundle 'tpope/vim-fugitive'
+
+" auto completion
+Bundle 'Shougo/neocomplcache.vim'
+
+" snipmate snippets
+Bundle "MarcWeber/vim-addon-mw-utils"
+Bundle "tomtom/tlib_vim"
+Bundle "garbas/vim-snipmate"
+
+" optional snippets
+Bundle 'honza/vim-snippets'
 
 " My Setting
 
@@ -174,10 +192,18 @@ map <Leader>gv :GitDiff<cr>
 map <Leader>gl :GitLog<cr>
 map <Leader>gs :GitStatus<cr>
 
+" ctags
 let Tlist_Ctags_Cmd='/usr/local/Cellar/ctags/5.8/bin/ctags'
+
 let Tlist_WinWidth=40
 let Tlist_GainFocus_On_ToggleOpen=1
 map <F5> :TlistToggle<cr>
 set tags+=./tags;/
 set tags+=gems.tags
+
+" neo config
+let g:neocomplcache_enable_at_startup = 1
+
+" ack
+let g:ackprg = 'ag --nogroup --nocolor --column'
 
