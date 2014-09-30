@@ -25,7 +25,10 @@ Bundle 'mrtazz/molokai.vim'
 Bundle 'mileszs/ack.vim'
 Bundle 'tpope/vim-rails'
 Bundle 'hallison/vim-markdown'
-Bundle 'mattn/zencoding-vim'
+
+"Bundle 'mattn/zencoding-vim'
+Bundle 'mattn/emmet-vim'
+
 Bundle 'motemen/git-vim'
 Bundle 'kchmck/vim-coffee-script'
 Bundle 'The-NERD-Commenter'
@@ -180,9 +183,15 @@ let NERDTreeMinimalUI=1
 let NERDTreeDirArrows=1
 let g:NERDTreeWinSize=30
 
+" emmet
+" key c-y,
+let g:user_emmet_mode='a'    "only enable normal mode functions.
+let g:user_emmet_install_global = 0
+autocmd FileType html,css EmmetInstall
+
 " ZenCoding
-let g:user_zen_expandabbr_key = '<c-y>'
-let g:use_zen_complete_tag = 1
+"let g:user_zen_expandabbr_key = '<c-y>'
+"let g:use_zen_complete_tag = 1
 
 " git-vim
 map <leader>ga :GitAdd<cr>
