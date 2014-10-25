@@ -20,11 +20,12 @@ Bundle 'kien/ctrlp.vim'
 Bundle 'scrooloose/nerdtree'
 
 " color molokai
-Bundle 'mrtazz/molokai.vim'
+"Bundle 'mrtazz/molokai.vim'
+Bundle 'Zenburn'
 
 Bundle 'mileszs/ack.vim'
 Bundle 'tpope/vim-rails'
-Bundle 'hallison/vim-markdown'
+"Bundle 'hallison/vim-markdown'
 
 "Bundle 'mattn/zencoding-vim'
 Bundle 'mattn/emmet-vim'
@@ -61,7 +62,7 @@ syntax enable
 
 " color theme
 try
-  colorscheme molokai
+  colorscheme zenburn
 catch
 endtry
 
@@ -84,7 +85,7 @@ set wrap " Wrap lines
 
 " 行号
 set number
-set numberwidth=4
+"set numberwidth=4
 
 " 缩进
 set tabstop=2
