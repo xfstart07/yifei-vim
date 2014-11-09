@@ -12,38 +12,33 @@ Bundle 'gmarik/vundle'
 "
 " original repos on github
 
-Bundle 'Align'
-
 " ctrl + p
 Bundle 'kien/ctrlp.vim'
 
 Bundle 'scrooloose/nerdtree'
 
-" color molokai
-"Bundle 'mrtazz/molokai.vim'
 Bundle 'Zenburn'
 
 Bundle 'mileszs/ack.vim'
-Bundle 'tpope/vim-rails'
-"Bundle 'hallison/vim-markdown'
-
-"Bundle 'mattn/zencoding-vim'
 Bundle 'mattn/emmet-vim'
 
-Bundle 'motemen/git-vim'
+" Markdown
+Bundle 'godlygeek/tabular'
+Bundle 'plasticboy/vim-markdown'
+
 Bundle 'kchmck/vim-coffee-script'
 Bundle 'The-NERD-Commenter'
 Bundle 'majutsushi/tagbar'
-Bundle "bling/vim-airline"
+Bundle 'bling/vim-airline'
 Bundle 'tpope/vim-fugitive'
 
 " auto completion
 Bundle 'Shougo/neocomplcache.vim'
 
 " snipmate snippets
-Bundle "MarcWeber/vim-addon-mw-utils"
-Bundle "tomtom/tlib_vim"
-Bundle "garbas/vim-snipmate"
+Bundle 'MarcWeber/vim-addon-mw-utils'
+Bundle 'tomtom/tlib_vim'
+Bundle 'garbas/vim-snipmate'
 
 " optional snippets
 Bundle 'honza/vim-snippets'
@@ -62,7 +57,7 @@ syntax enable
 
 " color theme
 try
-  colorscheme zenburn
+  colorscheme zenburn 
 catch
 endtry
 
@@ -165,9 +160,8 @@ let g:airline_enable_syntastic=1
 
 set ttimeoutlen=50
 
-
 " Tagbar
-nnoremap <silent> <F3> :TagbarToggle<CR>
+"nnoremap <silent> <F3> :TagbarToggle<CR>
 
 " NERDTree
 nnoremap <silent> <F2> :NERDTreeToggle<CR>
@@ -184,27 +178,6 @@ let NERDTreeMinimalUI=1
 let NERDTreeDirArrows=1
 let g:NERDTreeWinSize=30
 
-" emmet
-" key c-y,
-let g:user_emmet_mode='a'    "only enable normal mode functions.
-let g:user_emmet_install_global = 0
-autocmd FileType html,css EmmetInstall
-
-" ZenCoding
-"let g:user_zen_expandabbr_key = '<c-y>'
-"let g:use_zen_complete_tag = 1
-
-" git-vim
-map <leader>ga :GitAdd<cr>
-map <Leader>gb :GitBlame<cr>
-map <Leader>gc :GitCommit<cr>
-map <Leader>gv :GitDiff<cr>
-map <Leader>gl :GitLog<cr>
-map <Leader>gs :GitStatus<cr>
-
-" ctags
-let Tlist_Ctags_Cmd='/usr/local/Cellar/ctags/5.8/bin/ctags'
-
 let Tlist_WinWidth=40
 let Tlist_GainFocus_On_ToggleOpen=1
 map <F5> :TlistToggle<cr>
@@ -216,4 +189,9 @@ let g:neocomplcache_enable_at_startup = 1
 
 " ack
 let g:ackprg = 'ag --nogroup --nocolor --column'
+
+" emmet
+let g:user_emmet_mode='a'
+let g:user_emmet_install_global = 0
+autocmd FileType html,css EmmetInstall
 

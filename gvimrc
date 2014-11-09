@@ -1,6 +1,6 @@
 set guioptions=ce
 set antialias
-colorscheme molokai
+colorscheme zenburn 
 set linespace=2
 set vb t_vb= "关闭响铃和闪屏
 
