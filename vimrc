@@ -22,7 +22,11 @@ Bundle 'Zenburn'
 Bundle 'mileszs/ack.vim'
 Bundle 'mattn/emmet-vim'
 
+" Dash
+Bundle 'rizzatti/dash.vim'
+
 " Markdown
+" :TableFormat
 Bundle 'godlygeek/tabular'
 Bundle 'plasticboy/vim-markdown'
 
@@ -31,6 +35,9 @@ Bundle 'The-NERD-Commenter'
 Bundle 'majutsushi/tagbar'
 Bundle 'bling/vim-airline'
 Bundle 'tpope/vim-fugitive'
+
+" rails
+Bundle 'tpope/vim-rails'
 
 " auto completion
 Bundle 'Shougo/neocomplcache.vim'
